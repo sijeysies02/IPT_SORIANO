@@ -179,21 +179,6 @@ h2 {
     color: rgb(246, 64, 155);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-input, textarea, button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
 button {
     background-color: #333;
     color: white;
@@ -206,9 +191,63 @@ button:hover {
     background-color: #555;
 }
 
-#responseMessage {
-    margin-top: 10px;
+/* Contact Form Styling */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
     font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #ab47bc;
+}
+
+.contact-container button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #ab47bc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #9c27b0;
+}
+
+#responseMessage {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #4CAF50; /* Success message color */
+    text-align: center;
 }
 
 .project-grid {
